@@ -9,8 +9,3 @@ COPY ec2.py ec2.py
 COPY script.sh script.sh
 RUN chmod a+x script.sh
 ENTRYPOINT ["./script.sh"]
-
-
-
-
-
