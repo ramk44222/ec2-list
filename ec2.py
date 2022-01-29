@@ -1,5 +1,5 @@
 import boto3 
-import json
+
 ec2_client = boto3.client('ec2', region_name="us-east-2")
 
 regions = [region['RegionName'] for region in ec2_client.describe_regions()['Regions']]
